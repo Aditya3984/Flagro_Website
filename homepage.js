@@ -106,11 +106,11 @@ document.addEventListener('mousemove', (e) => {
 // DATA
 // =============================================
 const galleryItems = [
-  { cat: 'sunset',    title: 'Jesus',        artist: "John",         image: "images/Jesus.jpeg"    },
-  { cat: 'fine',      title: 'Buddha',       artist: 'Maya Chen',    image: "images/Buddha.jpeg"   },
-  { cat: 'photo',     title: 'Spiderman',    artist: 'Leo Park',     image: "images/Spiderman.jpeg"},
-  { cat: 'digital',   title: 'Crying',       artist: 'Aria Ross',    image: "images/Crying.jpeg"   },
-  { cat: 'graphic',   title: 'Flagro',       artist: 'Sam Lee',      image: "images/Flagro.jpeg"   },
+  { cat: 'sunset',    title: 'Jesus',        artist: "John",         image: "Jesus.jpeg"    },
+  { cat: 'fine',      title: 'Buddha',       artist: 'Maya Chen',    image: "Buddha.jpeg"   },
+  { cat: 'photo',     title: 'Spiderman',    artist: 'Leo Park',     image: "Spiderman.jpeg"},
+  { cat: 'digital',   title: 'Crying',       artist: 'Aria Ross',    image: "Crying.jpeg"   },
+  { cat: 'graphic',   title: 'Flagro',       artist: 'Sam Lee',      image: "Flagro.jpeg"   },
 ];
 
 const eventItems = [
