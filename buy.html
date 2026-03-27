@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtClub — Buy & Commission</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav>
+    <!-- Logo -->
+    <div class="logo">Art<em>Club</em></div>
+
+    <!-- Tab buttons to switch between sections -->
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showSection('gallery', this)">Buy Art</button>
+      <button class="nav-tab"        onclick="showSection('commission', this)">Commission</button>
+    </div>
+  </nav>
+
+
+  <!-- ===================== BUY ART SECTION ===================== -->
+  <section id="gallery" class="section active">
+
+    <!-- Section heading -->
+    <div class="sec-header">
+      <div class="rule"></div>
+      <h1>Buy <em>Art</em></h1>
+      <p>Support our artists — own a piece of original creativity.</p>
+    </div>
+
+    <!-- Art cards are injected here by JavaScript -->
+    <div class="gallery-wrap">
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+  </section>
+
+
+  <!-- ===================== COMMISSION SECTION ===================== -->
+  <section id="commission" class="section">
+
+    <!-- Section heading -->
+    <div class="sec-header">
+      <div class="rule"></div>
+      <h1>Request a <em>Commission</em></h1>
+      <p>Get custom artwork created just for you by our talented artists.</p>
+    </div>
+
+    <div class="commission-wrap">
+
+      <!-- ---- Artist Cards ---- -->
+      <div class="artist-grid">
+
+        <!-- Artist: Aria Chen -->
+        <div class="artist-card">
+          <div class="artist-top">
+            <div class="avatar" style="background:#c07a45">A</div>
+            <div>
+              <div class="artist-name">Aria Chen</div>
+              <div class="artist-from">From ₹2,000</div>
+            </div>
+          </div>
+          <div class="artist-specialty">Oil paintings, portraits, landscapes</div>
+          <button class="btn-outline" onclick="selectArtist('Aria Chen')">
+            <!-- Chat icon -->
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Request Commission
+          </button>
+        </div>
+
+        <!-- Artist: Kai Tanaka -->
+        <div class="artist-card">
+          <div class="artist-top">
+            <div class="avatar" style="background:#4aa89b">K</div>
+            <div>
+              <div class="artist-name">Kai Tanaka</div>
+              <div class="artist-from">From ₹800</div>
+            </div>
+          </div>
+          <div class="artist-specialty">Digital illustrations, character design</div>
+          <button class="btn-outline" onclick="selectArtist('Kai Tanaka')">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Request Commission
+          </button>
+        </div>
+
+        <!-- Artist: Nina Okafor -->
+        <div class="artist-card">
+          <div class="artist-top">
+            <div class="avatar" style="background:#8a5bbf">N</div>
+            <div>
+              <div class="artist-name">Nina Okafor</div>
+              <div class="artist-from">From ₹1,500</div>
+            </div>
+          </div>
+          <div class="artist-specialty">Brand identity, logos, posters</div>
+          <button class="btn-outline" onclick="selectArtist('Nina Okafor')">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Request Commission
+          </button>
+        </div>
+
+      </div><!-- /.artist-grid -->
+
+
+      <!-- ---- Commission Request Form ---- -->
+      <div class="form-sec-header">
+        <div class="rule"></div>
+        <h2>Submit Your <em>Request</em></h2>
+        <p>Fill in the details — we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="comm-form-card">
+
+        <!-- Row 1: Name + Email -->
+        <div class="two-col">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input id="c-name" type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input id="c-email" type="email" placeholder="you@email.com">
+          </div>
+        </div>
+
+        <!-- Row 2: Phone + Budget -->
+        <div class="two-col">
+          <div class="form-group">
+            <label>Phone *</label>
+            <input id="c-phone" type="tel" placeholder="+91 00000 00000">
+          </div>
+          <div class="form-group">
+            <label>Approx Budget *</label>
+            <input id="c-budget" type="text" placeholder="e.g. ₹3,000 – ₹8,000">
+          </div>
+        </div>
+
+        <!-- Artist Selector (pre-filled by artist card buttons) -->
+        <div class="form-group">
+          <label>Preferred Artist</label>
+          <select id="c-artist">
+            <option value="">Select an artist (optional)</option>
+            <option>Aria Chen</option>
+            <option>Kai Tanaka</option>
+            <option>Nina Okafor</option>
+          </select>
+        </div>
+
+        <!-- Artwork Description -->
+        <div class="form-group">
+          <label>Describe Your Artwork *</label>
+          <textarea id="c-desc" rows="4" placeholder="Theme, style, colours, size, mood…"></textarea>
+        </div>
+
+        <!-- Optional Reference Image Upload -->
+        <div class="form-group">
+          <label>Reference Image (optional)</label>
+          <div class="upload-area">
+            <!-- Hidden file input — the whole div acts as the clickable area -->
+            <input type="file" accept="image/*" onchange="handleUpload(event)">
+            <div class="upload-icon">🖼️</div>
+            <p id="uploadLabel">Click or drag an image here</p>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn-primary" onclick="submitCommission()">Send Commission Request →</button>
+
+      </div><!-- /.comm-form-card -->
+
+      <!-- Success Banner (hidden until form is submitted) -->
+      <div class="success-banner" id="commissionSuccess">
+        <div class="sicon">🎨</div>
+        <h3>Request Sent!</h3>
+        <p>Your commission request has been forwarded to the Art Club. We'll be in touch within 24–48 hours.</p>
+      </div>
+
+    </div><!-- /.commission-wrap -->
+  </section>
+
+
+  <!-- ===================== CHECKOUT MODAL ===================== -->
+  <!--
+    Clicking the dark overlay (outside the modal box) closes the modal.
+    The inner .modal div stops click propagation via closeOutside().
+  -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeOutside(event)">
+    <div class="modal">
+
+      <!-- Close button (top-right X) -->
+      <button class="modal-close" onclick="closeModal()">✕</button>
+
+      <!-- 4-step progress dots -->
+      <div class="steps-bar">
+        <div class="step-dot active" id="sd1"></div>
+        <div class="step-dot"        id="sd2"></div>
+        <div class="step-dot"        id="sd3"></div>
+        <div class="step-dot"        id="sd4"></div>
+      </div>
+
+
+      <!-- ---------- STEP 1: Buyer Details ---------- -->
+      <div id="step1">
+        <div class="step-label"><span>Step 1</span> of 4 — Your Details</div>
+        <h2>Delivery Information</h2>
+        <p class="modal-sub">We'll send your artwork and receipt here.</p>
+
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input id="b-name" type="text" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input id="b-phone" type="tel" placeholder="+91 00000 00000">
+        </div>
+        <div class="form-group">
+          <label>Email ID *</label>
+          <input id="b-email" type="email" placeholder="you@email.com">
+        </div>
+        <div class="form-group">
+          <label>Delivery Address *</label>
+          <textarea id="b-addr" rows="3" placeholder="House, Street, City, State, PIN"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Additional Info (optional)</label>
+          <input id="b-extra" type="text" placeholder="Landmark, instructions…">
+        </div>
+
+        <button class="btn-primary" onclick="goStep(2)">Continue to Order Summary →</button>
+      </div>
+
+
+      <!-- ---------- STEP 2: Order Summary ---------- -->
+      <div id="step2" style="display:none">
+        <div class="step-label"><span>Step 2</span> of 4 — Order Summary</div>
+        <h2>Review Your Order</h2>
+        <p class="modal-sub">Complete price breakdown before payment.</p>
+
+        <!-- Small artwork preview row (image + title) -->
+        <div class="summary-art-row">
+          <img id="sum-img" src="" alt="">
+          <div>
+            <div class="sum-art-name" id="sum-title"></div>
+            <div class="sum-art-by">ArtClub Original</div>
+          </div>
+        </div>
+
+        <!-- Price breakdown table -->
+        <div class="price-breakdown">
+          <div class="price-row"><span class="plbl">Artwork Price</span>    <span id="s-art">₹0</span></div>
+          <div class="price-row"><span class="plbl">Platform Fee (5%)</span><span id="s-plat">₹0</span></div>
+          <div class="price-row"><span class="plbl">Packaging Charges</span><span>₹150</span></div>
+          <div class="price-row"><span class="plbl">Delivery Charges</span> <span>₹80</span></div>
+          <div class="price-row total">
+            <span>Total Payable</span>
+            <span class="pval" id="s-total">₹0</span>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="goStep(3)">Proceed to Payment →</button>
+        <button class="btn-back"    onclick="goStep(1)">← Back</button>
+      </div>
+
+
+      <!-- ---------- STEP 3: Payment (UPI QR) ---------- -->
+      <div id="step3" style="display:none">
+        <div class="step-label"><span>Step 3</span> of 4 — Payment</div>
+        <h2>Complete Payment</h2>
+        <p class="modal-sub">Scan the QR or pay via UPI ID below.</p>
+
+        <div class="payment-box">
+
+          <!-- Static decorative QR code (SVG) -->
+          <div class="qr-wrap">
+            <svg viewBox="0 0 100 100" width="136" height="136" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" fill="white"/>
+              <!-- Top-left finder pattern -->
+              <rect x="5"  y="5"  width="30" height="30" fill="none" stroke="#222" stroke-width="4"/>
+              <rect x="12" y="12" width="16" height="16" fill="#222"/>
+              <!-- Top-right finder pattern -->
+              <rect x="65" y="5"  width="30" height="30" fill="none" stroke="#222" stroke-width="4"/>
+              <rect x="72" y="12" width="16" height="16" fill="#222"/>
+              <!-- Bottom-left finder pattern -->
+              <rect x="5"  y="65" width="30" height="30" fill="none" stroke="#222" stroke-width="4"/>
+              <rect x="12" y="72" width="16" height="16" fill="#222"/>
+              <!-- Data modules (decorative) -->
+              <rect x="42" y="5"  width="6" height="6" fill="#222"/>
+              <rect x="52" y="5"  width="6" height="6" fill="#222"/>
+              <rect x="42" y="15" width="6" height="6" fill="#222"/>
+              <rect x="52" y="20" width="6" height="6" fill="#222"/>
+              <rect x="5"  y="42" width="6" height="6" fill="#222"/>
+              <rect x="15" y="42" width="6" height="6" fill="#222"/>
+              <rect x="25" y="42" width="6" height="6" fill="#222"/>
+              <rect x="5"  y="52" width="6" height="6" fill="#222"/>
+              <rect x="25" y="52" width="6" height="6" fill="#222"/>
+              <rect x="42" y="42" width="6" height="6" fill="#222"/>
+              <rect x="55" y="42" width="6" height="6" fill="#222"/>
+              <rect x="65" y="42" width="6" height="6" fill="#222"/>
+              <rect x="75" y="42" width="6" height="6" fill="#222"/>
+              <rect x="85" y="42" width="6" height="6" fill="#222"/>
+              <rect x="42" y="55" width="6" height="6" fill="#222"/>
+              <rect x="65" y="55" width="6" height="6" fill="#222"/>
+              <rect x="42" y="65" width="6" height="6" fill="#222"/>
+              <rect x="55" y="65" width="6" height="6" fill="#222"/>
+              <rect x="65" y="65" width="6" height="6" fill="#222"/>
+              <rect x="75" y="65" width="6" height="6" fill="#222"/>
+              <rect x="42" y="75" width="6" height="6" fill="#222"/>
+              <rect x="75" y="75" width="6" height="6" fill="#222"/>
+              <rect x="55" y="85" width="6" height="6" fill="#222"/>
+              <rect x="65" y="85" width="6" height="6" fill="#222"/>
+              <rect x="85" y="55" width="6" height="6" fill="#222"/>
+              <rect x="85" y="65" width="6" height="6" fill="#222"/>
+              <rect x="85" y="75" width="6" height="6" fill="#222"/>
+            </svg>
+          </div>
+
+          <!-- Clickable UPI ID chip — copies to clipboard -->
+          <div class="upi-chip" onclick="copyUPI()">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            artclub@upi
+          </div>
+
+          <!-- Instruction text with dynamic total -->
+          <div class="pay-note">
+            Open any UPI app → Scan QR or enter UPI ID<br>
+            Pay <strong id="pay-amt" style="color:var(--accent)">₹0</strong> → tap "I Have Paid"
+          </div>
+
+        </div><!-- /.payment-box -->
+
+        <!-- Optional UTR reference field -->
+        <div class="form-group">
+          <label>Payment Reference / UTR (optional)</label>
+          <input id="b-utr" type="text" placeholder="12-digit UTR from your UPI app">
+        </div>
+
+        <button class="btn-primary" onclick="goStep(4)">✓ I Have Paid</button>
+        <button class="btn-back"    onclick="goStep(2)">← Back</button>
+      </div>
+
+
+      <!-- ---------- STEP 4: Confirmation ---------- -->
+      <div id="step4" style="display:none">
+        <div class="step-label"><span>Step 4</span> of 4 — Confirmed</div>
+
+        <div class="conf-wrap">
+          <div class="conf-check">✅</div>
+          <h2>Order Confirmed!</h2>
+          <p>Thank you for your purchase.</p>
+          <!-- Auto-generated order ID -->
+          <div class="order-chip" id="conf-oid">#ORD-000000</div>
+          <p>Receipt sent to <strong id="conf-email" style="color:var(--text)"></strong></p>
+        </div>
+
+        <!-- Receipt summary table -->
+        <div class="receipt-card">
+          <div class="r-row"><span>Artwork</span>      <span id="r-title"></span></div>
+          <div class="r-row"><span>Buyer</span>        <span id="r-name"></span></div>
+          <div class="r-row"><span>Artwork Price</span><span id="r-art"></span></div>
+          <div class="r-row"><span>Platform Fee</span> <span id="r-plat"></span></div>
+          <div class="r-row"><span>Packaging</span>    <span>₹150</span></div>
+          <div class="r-row"><span>Delivery</span>     <span>₹80</span></div>
+          <div class="r-row"><span>Total Paid</span>   <span id="r-total"></span></div>
+        </div>
+
+        <p style="font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:16px">
+          📧 Full receipt emailed to you
+        </p>
+
+        <button class="btn-primary" onclick="closeModal()">Done — Back to Gallery</button>
+      </div>
+
+    </div><!-- /.modal -->
+  </div><!-- /.modal-overlay -->
+
+
+  <!-- External JavaScript -->
+  <script src="buy.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Flagro Art Club</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F5F3EF',
+            terra: '#C8745A',
+            terradark: '#A85D46',
+            blush: '#D6A190',
+            olive: '#8FA47C',
+            dark: '#2B1F1B',
+            beige: '#E8DED2',
+            sand: '#D4C4B0',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"DM Sans"', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="about.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-cream font-body text-dark">
+  <div class="scroll-wrapper w-full" id="main-wrapper">
+
+   <!-- ═══════════════════ HERO ═══════════════════ -->
+   <header class="relative w-full overflow-hidden" style="background: linear-gradient(160deg, #F5F3EF 0%, #E8DED2 40%, #D6A190 100%);">
+    <div class="absolute top-10 left-10 w-32 h-32 bg-terra opacity-10 blob-1 anim-float" style="animation-delay: 0s;"></div>
+    <div class="absolute top-20 right-16 w-24 h-24 bg-olive opacity-15 blob-2 anim-float-rev" style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-16 left-1/4 w-20 h-20 bg-blush opacity-20 blob-1 anim-float" style="animation-delay: 2s;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
+     <div class="inline-flex items-center gap-2 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 anim-fade-up opacity-0 delay-1">
+      <span class="w-2 h-2 rounded-full bg-terra"></span>
+      <span class="text-sm font-medium text-terra tracking-wide uppercase">IISER Berhampur</span>
+     </div>
+     <h1 id="heroTitle" class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark leading-tight anim-fade-up opacity-0 delay-2">About Flagro Art Club</h1>
+     <p id="heroSubtitle" class="mt-6 text-lg md:text-xl text-dark/70 max-w-2xl mx-auto leading-relaxed anim-fade-up opacity-0 delay-3">A creative community where artists and designers collaborate to explore visual expression.</p>
+     <div class="mt-10 flex flex-wrap justify-center gap-4 anim-fade-up opacity-0 delay-4">
+      <a href="#teams" class="inline-flex items-center gap-2 bg-terra hover:bg-terradark text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-terra/20">
+       <i data-lucide="users" style="width:18px;height:18px;"></i> Meet the Team
+      </a>
+     </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full">
+     <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+      <path d="M0 40C240 70 480 10 720 40C960 70 1200 10 1440 40V80H0V40Z" fill="#F5F3EF" />
+     </svg>
+    </div>
+   </header>
+
+   <!-- ═══════════════════ ABOUT ═══════════════════ -->
+   <section class="section-reveal w-full bg-cream py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="relative">
+       <div class="bg-gradient-to-br from-terra/5 to-olive/5 rounded-3xl p-0 relative overflow-hidden border-2 border-terra/20" style="aspect-ratio: 4/3;">
+        <svg viewBox="0 0 400 300" fill="none" class="w-full h-full">
+         <circle cx="80" cy="60" r="50" fill="#C8745A" opacity="0.1" />
+         <circle cx="320" cy="240" r="70" fill="#8FA47C" opacity="0.08" />
+         <g transform="translate(80, 60)">
+          <line x1="60" y1="10" x2="60" y2="150" stroke="#2B1F1B" stroke-width="3" stroke-linecap="round" />
+          <line x1="35" y1="140" x2="85" y2="140" stroke="#2B1F1B" stroke-width="3" stroke-linecap="round" />
+          <line x1="60" y1="150" x2="30" y2="185" stroke="#2B1F1B" stroke-width="2.5" />
+          <line x1="60" y1="150" x2="90" y2="185" stroke="#2B1F1B" stroke-width="2.5" />
+          <rect x="30" y="20" width="60" height="110" rx="3" fill="white" stroke="#C8745A" stroke-width="2" />
+          <circle cx="50" cy="45" r="12" fill="#C8745A" opacity="0.5" />
+          <path d="M55 75 Q65 85 55 95" fill="none" stroke="#8FA47C" stroke-width="1.5" />
+          <rect x="40" y="100" width="20" height="20" rx="3" fill="#D6A190" opacity="0.5" />
+         </g>
+         <ellipse cx="240" cy="220" rx="35" ry="25" fill="none" stroke="#2B1F1B" stroke-width="1.5" />
+         <circle cx="225" cy="212" r="5" fill="#C8745A" />
+         <circle cx="240" cy="205" r="5" fill="#8FA47C" />
+         <circle cx="255" cy="212" r="5" fill="#D6A190" />
+        </svg>
+       </div>
+      </div>
+      <div>
+       <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</span>
+       <h2 id="aboutHeading" class="font-display text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">About the Club</h2>
+       <div id="aboutDescription" class="space-y-4 text-dark/70 leading-relaxed">
+        <p><strong class="text-dark">Flagro Art Club</strong> is the official creative community at IISER Berhampur dedicated to promoting artistic expression across multiple mediums including traditional art, digital design, comics, and visual storytelling.</p>
+        <p>The club organizes workshops, exhibitions, competitions, and creative events that help students explore their imagination and share their work with the community.</p>
+        <p>Flagro serves as a space where <em class="text-terra font-medium">creativity meets collaboration</em>, bringing together artists, designers, and storytellers.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ STATS ═══════════════════ -->
+   <section class="section-reveal w-full" style="background: linear-gradient(135deg, #2B1F1B 0%, #3D2C26 100%);">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+       <div class="text-4xl md:text-5xl font-display font-bold text-terra mb-2">50+</div>
+       <div class="text-sm text-white/60 font-medium">Events Organized</div>
+      </div>
+      <div class="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+       <div class="text-4xl md:text-5xl font-display font-bold text-blush mb-2">80+</div>
+       <div class="text-sm text-white/60 font-medium">Team Members</div>
+      </div>
+      <div class="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+       <div class="text-4xl md:text-5xl font-display font-bold text-olive mb-2">10+</div>
+       <div class="text-sm text-white/60 font-medium">Achievements</div>
+      </div>
+      <div class="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+       <div class="text-4xl md:text-5xl font-display font-bold text-white/90 mb-2">200+</div>
+       <div class="text-sm text-white/60 font-medium">Artworks Created</div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ ACHIEVEMENTS ═══════════════════ -->
+   <section class="section-reveal w-full bg-cream py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-14">
+      <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Recognition</span>
+      <h2 id="achievementsTitle" class="font-display text-3xl md:text-4xl font-bold text-dark">Club Achievements</h2>
+     </div>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl p-6 card-hover border border-dark/5 text-center">
+       <div class="w-12 h-12 bg-terra/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="trophy" style="width:24px;height:24px;color:#C8745A;"></i>
+       </div>
+       <h3 class="font-display text-lg font-bold text-dark mb-2">Best Art Club Award</h3>
+       <p class="text-sm text-dark/55">Recognized as the most active creative community</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 card-hover border border-dark/5 text-center">
+       <div class="w-12 h-12 bg-olive/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="medal" style="width:24px;height:24px;color:#8FA47C;"></i>
+       </div>
+       <h3 class="font-display text-lg font-bold text-dark mb-2">Design Competition Winner</h3>
+       <p class="text-sm text-dark/55">Won inter-college design competition</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 card-hover border border-dark/5 text-center">
+       <div class="w-12 h-12 bg-blush/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="frame" style="width:24px;height:24px;color:#D6A190;"></i>
+       </div>
+       <h3 class="font-display text-lg font-bold text-dark mb-2">Campus Art Exhibition</h3>
+       <p class="text-sm text-dark/55">Successfully organized multiple exhibitions</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 card-hover border border-dark/5 text-center">
+       <div class="w-12 h-12 bg-beige rounded-xl flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="sparkles" style="width:24px;height:24px;color:#2B1F1B;"></i>
+       </div>
+       <h3 class="font-display text-lg font-bold text-dark mb-2">Festival Collaborations</h3>
+       <p class="text-sm text-dark/55">Partnered with creative festivals</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ DESIGN DIVISION ═══════════════════ -->
+   <section class="section-reveal w-full bg-cream py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="relative">
+       <div class="bg-gradient-to-br from-olive/5 to-terra/5 rounded-3xl p-0 relative overflow-hidden border-2 border-olive/20" style="aspect-ratio: 4/3;">
+        <div id="designShowcaseFrame" class="w-full h-full flex items-center justify-center" style="background: linear-gradient(135deg, #F5F3EF 0%, #E8DED2 100%);"></div>
+       </div>
+      </div>
+      <div>
+       <span class="inline-block text-olive font-semibold text-sm tracking-widest uppercase mb-3">Creative Division</span>
+       <h2 id="designHeading" class="font-display text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">Design Division</h2>
+       <div id="designDescription" class="space-y-4 text-dark/70 leading-relaxed">
+        <p>The <strong class="text-dark">Design Division</strong> focuses on graphic design, digital illustration, branding, poster design, and visual storytelling.</p>
+        <p>Members contribute to event posters, digital illustrations, creative campaigns, and UI design projects that shape the visual identity of Flagro and campus events.</p>
+        <p>This team transforms <em class="text-olive font-medium">ideas into stunning visuals</em> across multiple mediums.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ COMIC DIVISION ═══════════════════ -->
+   <section class="section-reveal w-full bg-beige py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="order-2 md:order-1 relative">
+       <div class="bg-gradient-to-br from-blush/5 to-terra/5 rounded-3xl p-0 relative overflow-hidden border-2 border-blush/20" style="aspect-ratio: 4/3;">
+        <div id="comicShowcaseFrame" class="w-full h-full flex items-center justify-center" style="background: linear-gradient(135deg, #F5F3EF 0%, #D6A190 100%);"></div>
+       </div>
+      </div>
+      <div class="order-1 md:order-2">
+       <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Creative Division</span>
+       <h2 id="comicHeading" class="font-display text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">Comic Division</h2>
+       <div id="comicDescription" class="space-y-4 text-dark/70 leading-relaxed">
+        <p>The <strong class="text-dark">Comic Division</strong> specializes in storytelling through comics, humor, and character design.</p>
+        <p>Members create comic strips, character illustrations, meme art, and narrative panels that combine creativity with engaging visual narratives.</p>
+        <p>Pictopia produces <em class="text-terra font-medium">compelling stories through sequential art</em>.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ TEAMS ═══════════════════ -->
+   <section id="teams" class="section-reveal w-full bg-cream py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-16">
+      <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Our Structure</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-dark">Club Teams</h2>
+     </div>
+
+     <!-- Core Team -->
+     <div class="mb-20">
+      <h3 id="coreTeamTitle" class="font-display text-2xl md:text-3xl font-bold text-dark mb-10">Core Team</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #C8745A, #D6A190);">
+         <span class="text-2xl font-display font-bold text-white">AK</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Arjun Kumar</h4>
+        <p class="text-xs text-terra font-medium mt-1">Coordinator</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #8FA47C, #6B8A5E);">
+         <span class="text-2xl font-display font-bold text-white">PS</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Priya Sharma</h4>
+        <p class="text-xs text-olive font-medium mt-1">Founder</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #D6A190, #E8DED2);">
+         <span class="text-2xl font-display font-bold text-dark/70">RM</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Rahul Mishra</h4>
+        <p class="text-xs text-terradark font-medium mt-1">Co-Founder</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #2B1F1B, #4A3530);">
+         <span class="text-2xl font-display font-bold text-white">SN</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Sneha Nair</h4>
+        <p class="text-xs text-dark/60 font-medium mt-1">Treasurer</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #C8745A, #8FA47C);">
+         <span class="text-2xl font-display font-bold text-white">VD</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Vikram Das</h4>
+        <p class="text-xs text-terra font-medium mt-1">Secretary</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #D6A190, #C8745A);">
+         <span class="text-2xl font-display font-bold text-white">MP</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Meera Patel</h4>
+        <p class="text-xs text-terra font-medium mt-1">Joint Sec</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #8FA47C, #A85D46);">
+         <span class="text-2xl font-display font-bold text-white">AJ</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Arjun Joshi</h4>
+        <p class="text-xs text-olive font-medium mt-1">Advisor</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #2B1F1B, #D6A190);">
+         <span class="text-2xl font-display font-bold text-white">KR</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Kavya Reddy</h4>
+        <p class="text-xs text-dark/60 font-medium mt-1">Mentor</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #C8745A, #6B8A5E);">
+         <span class="text-2xl font-display font-bold text-white">RK</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Rohan Kumar</h4>
+        <p class="text-xs text-terra font-medium mt-1">Board</p>
+       </div>
+       <div class="bg-white rounded-2xl p-5 text-center team-card-hover border border-dark/5">
+        <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #D6A190, #8FA47C);">
+         <span class="text-2xl font-display font-bold text-white">LS</span>
+        </div>
+        <h4 class="font-display font-bold text-dark text-sm">Lokesh Singh</h4>
+        <p class="text-xs text-terra font-medium mt-1">Member</p>
+       </div>
+      </div>
+     </div>
+
+     <!-- Department Teams -->
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-3xl p-8 border border-dark/5">
+       <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-terra/10 rounded-full flex items-center justify-center">
+         <i data-lucide="calendar" style="width:24px;height:24px;color:#C8745A;"></i>
+        </div>
+        <h3 id="eventsTeamTitle" class="font-display text-xl font-bold text-dark">Events Team</h3>
+       </div>
+       <p class="text-dark/60 text-sm mb-6">Organizes workshops, exhibitions, competitions, and creative events throughout the year.</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-terra/10 text-terra text-xs font-medium px-3 py-1.5 rounded-full">Workshops</span>
+        <span class="bg-terra/10 text-terra text-xs font-medium px-3 py-1.5 rounded-full">Exhibitions</span>
+        <span class="bg-terra/10 text-terra text-xs font-medium px-3 py-1.5 rounded-full">Competitions</span>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl p-8 border border-dark/5">
+       <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-olive/10 rounded-full flex items-center justify-center">
+         <i data-lucide="palette" style="width:24px;height:24px;color:#8FA47C;"></i>
+        </div>
+        <h3 id="designTeamTitle" class="font-display text-xl font-bold text-dark">Design Team</h3>
+       </div>
+       <p class="text-dark/60 text-sm mb-6">Creates stunning graphics, posters, and digital designs for the club.</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-olive/10 text-olive text-xs font-medium px-3 py-1.5 rounded-full">Graphic Design</span>
+        <span class="bg-olive/10 text-olive text-xs font-medium px-3 py-1.5 rounded-full">Digital Art</span>
+        <span class="bg-olive/10 text-olive text-xs font-medium px-3 py-1.5 rounded-full">Branding</span>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl p-8 border border-dark/5">
+       <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-blush/30 rounded-full flex items-center justify-center">
+         <i data-lucide="book-open" style="width:24px;height:24px;color:#D6A190;"></i>
+        </div>
+        <h3 id="pictopiaTeamTitle" class="font-display text-xl font-bold text-dark">Pictopia Team</h3>
+       </div>
+       <p class="text-dark/60 text-sm mb-6">Specializes in comic creation, visual storytelling, and character design.</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-blush/30 text-terradark text-xs font-medium px-3 py-1.5 rounded-full">Comics</span>
+        <span class="bg-blush/30 text-terradark text-xs font-medium px-3 py-1.5 rounded-full">Storytelling</span>
+        <span class="bg-blush/30 text-terradark text-xs font-medium px-3 py-1.5 rounded-full">Characters</span>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl p-8 border border-dark/5">
+       <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-dark/10 rounded-full flex items-center justify-center">
+         <i data-lucide="share-2" style="width:24px;height:24px;color:#2B1F1B;"></i>
+        </div>
+        <h3 id="socialTeamTitle" class="font-display text-xl font-bold text-dark">Social Media Team</h3>
+       </div>
+       <p class="text-dark/60 text-sm mb-6">Manages our online presence and engages the creative community across platforms.</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-dark/10 text-dark text-xs font-medium px-3 py-1.5 rounded-full">Content</span>
+        <span class="bg-dark/10 text-dark text-xs font-medium px-3 py-1.5 rounded-full">Engagement</span>
+        <span class="bg-dark/10 text-dark text-xs font-medium px-3 py-1.5 rounded-full">Community</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ EVENTS GALLERY ═══════════════════ -->
+   <section class="section-reveal w-full bg-beige py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-12">
+      <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Our Work</span>
+      <h2 id="galleryTitle" class="font-display text-3xl md:text-4xl font-bold text-dark">Event Gallery</h2>
+     </div>
+     <div id="eventGalleryPreview" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8"></div>
+     <div class="text-center">
+      <button onclick="openEventFullGallery()" class="inline-flex items-center gap-2 bg-terra hover:bg-terradark text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-terra/20">
+       <i data-lucide="images" style="width:18px;height:18px;"></i> Explore All Events
+      </button>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ EVENT GALLERY MODAL ═══════════════════ -->
+   <div id="eventGalleryModal" class="hidden fixed inset-0 modal-backdrop z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl w-full max-w-2xl max-h-[80vh] overflow-hidden flex flex-col">
+     <div class="flex items-center justify-between p-6 border-b border-dark/10">
+      <h3 class="font-display text-2xl font-bold text-dark">Event Gallery</h3>
+      <button onclick="closeEventGallery()" class="p-2 hover:bg-dark/10 rounded-full transition">
+       <i data-lucide="x" style="width:24px;height:24px;"></i>
+      </button>
+     </div>
+     <div class="overflow-auto flex-1">
+      <div id="eventGallerySlider" class="gallery-slider" style="height: 400px;"></div>
+     </div>
+    </div>
+   </div>
+
+   <!-- ═══════════════════ MISSION & VISION ═══════════════════ -->
+   <section class="section-reveal w-full" style="background: linear-gradient(135deg, #2B1F1B 0%, #3D2C26 100%);">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+     <div class="grid md:grid-cols-2 gap-12">
+      <div>
+       <div class="w-12 h-12 bg-terra/20 rounded-xl flex items-center justify-center mb-6">
+        <i data-lucide="target" style="width:24px;height:24px;color:#C8745A;"></i>
+       </div>
+       <h3 class="font-display text-2xl md:text-3xl font-bold text-white mb-6">Our Mission</h3>
+       <p id="missionText" class="text-white/70 leading-relaxed">To foster creativity, collaboration, and artistic exploration among students by providing a platform where ideas can be transformed into visual expressions.</p>
+      </div>
+      <div>
+       <div class="w-12 h-12 bg-olive/20 rounded-xl flex items-center justify-center mb-6">
+        <i data-lucide="sparkles" style="width:24px;height:24px;color:#8FA47C;"></i>
+       </div>
+       <h3 class="font-display text-2xl md:text-3xl font-bold text-white mb-6">Our Vision</h3>
+       <p id="visionText" class="text-white/70 leading-relaxed">To build a vibrant artistic community that inspires innovation, storytelling, and cultural expression through visual arts.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ INSTAGRAM ═══════════════════ -->
+   <section class="section-reveal w-full bg-cream py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-12">
+      <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Follow Us</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-dark">Follow Our Creative Journey</h2>
+      <p id="instagramHandle" class="text-terra font-semibold text-lg mt-4">@flagroartclub</p>
+     </div>
+     <div id="instagramGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10"></div>
+     <div class="text-center">
+      <a href="https://instagram.com/flagroartclub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-terra hover:bg-terradark text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-terra/20">
+       <i data-lucide="instagram" style="width:18px;height:18px;"></i> Follow on Instagram
+      </a>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ CONTACT ═══════════════════ -->
+   <section class="section-reveal w-full bg-beige py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+     <div class="text-center mb-14">
+      <span class="inline-block text-terra font-semibold text-sm tracking-widest uppercase mb-3">Get In Touch</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-dark">Connect With Us</h2>
+     </div>
+     <div class="grid md:grid-cols-2 gap-10 mb-12">
+      <div class="space-y-6">
+       <div class="flex items-start gap-4">
+        <div class="w-10 h-10 bg-terra/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+         <i data-lucide="mail" style="width:20px;height:20px;color:#C8745A;"></i>
+        </div>
+        <div>
+         <p class="text-sm text-terra font-semibold uppercase tracking-wide">Email</p>
+         <p id="contactEmail" class="text-dark font-semibold">hello@flagro.club</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-10 h-10 bg-terra/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+         <i data-lucide="map-pin" style="width:20px;height:20px;color:#C8745A;"></i>
+        </div>
+        <div>
+         <p class="text-sm text-terra font-semibold uppercase tracking-wide">Location</p>
+         <p id="contactLocation" class="text-dark font-semibold">Creative Arts Building, IISER Berhampur</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-10 h-10 bg-terra/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+         <i data-lucide="instagram" style="width:20px;height:20px;color:#C8745A;"></i>
+        </div>
+        <div>
+         <p class="text-sm text-terra font-semibold uppercase tracking-wide">Follow</p>
+         <p class="text-dark font-semibold">@flagroartclub</p>
+        </div>
+       </div>
+      </div>
+      <form id="contactForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+       <div>
+        <label for="name" class="block text-sm font-semibold text-dark mb-2">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" class="w-full px-4 py-3 rounded-xl border border-dark/10 focus:border-terra focus:outline-none transition">
+       </div>
+       <div>
+        <label for="email" class="block text-sm font-semibold text-dark mb-2">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com" class="w-full px-4 py-3 rounded-xl border border-dark/10 focus:border-terra focus:outline-none transition">
+       </div>
+       <div>
+        <label for="message" class="block text-sm font-semibold text-dark mb-2">Message</label>
+        <textarea id="message" name="message" required placeholder="Your message..." rows="4" class="w-full px-4 py-3 rounded-xl border border-dark/10 focus:border-terra focus:outline-none transition resize-none"></textarea>
+       </div>
+       <button type="submit" class="w-full bg-terra hover:bg-terradark text-white font-semibold py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-terra/20">Send Message</button>
+       <div id="formSuccess" class="hidden p-4 bg-olive/10 border border-olive/30 rounded-xl text-olive text-sm font-medium text-center">
+        ✓ Thank you! We'll get back to you soon.
+       </div>
+      </form>
+     </div>
+    </div>
+   </section>
+
+   <!-- ═══════════════════ FOOTER ═══════════════════ -->
+   <footer class="w-full" style="background: linear-gradient(135deg, #2B1F1B 0%, #3D2C26 100%);">
+    <div class="max-w-6xl mx-auto px-6 py-12 text-center text-white/60 text-sm">
+     <p>© 2025 Flagro Art Club, IISER Berhampur. All rights reserved.</p>
+    </div>
+   </footer>
+
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="about.js"></script>
+
+ </body>
+</html>
