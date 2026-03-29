@@ -159,7 +159,7 @@ const newsItems = [
 
 const contactCards = [
   { icon: 'mail',      label: 'Email',     value: 'flagroartclub@iiserbpr.ac.in',       link: 'mailto:flagroartclub@iiserbpr.ac.in' },
-  { icon: 'instagram', label: 'Instagram', value: 'flagro_iiserbpr',            link: 'https://www.instagram.com/flagro_iiserbpr?igsh=MWNkejVqMnVpNjBveg=='                        },
+  { icon: 'instagram', label: 'Instagram', value: 'flagro_iiserbpr',            link: 'https://www.instagram.com/flagro_iiserbpr?igsh=MWNkejVqMnVpNjBveg=='},
   { icon: 'map-pin',   label: 'Location',  value: 'Arts Building, Room 204', link: '#'                        }
 ];
 
