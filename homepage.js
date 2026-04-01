@@ -134,12 +134,12 @@ const galleryItems = [
 ];
 
 const eventItems = [
-  {  title: 'Spring Exhibition',   date: 'Mar 15, 2024', desc: 'Annual showcase of emerging artists',          img: "images/Jesus.jpeg" },
-  {  title: 'Plein Air Workshop',  date: 'Apr 02, 2024', desc: 'Outdoor painting in the botanical garden',     img: "images/Jesus.jpeg" },
-  {  title: 'Digital Art Night',   date: 'Apr 18, 2024', desc: 'Explore creative coding and generative art',   img: "images/Jesus.jpeg" },
-  {  title: 'Gallery Opening',     date: 'May 05, 2024', desc: 'New member works debut exhibition',            img: "images/Jesus.jpeg" },
-  {  title: 'Portrait Session',    date: 'May 22, 2024', desc: 'Live model drawing and techniques',            img: "images/Jesus.jpeg" },
-  {  title: 'Art Fair',            date: 'Jun 10, 2024', desc: 'Community art market and networking',          img: "images/Jesus.jpeg" },
+  {  title: 'INFLUX',   date: 'Mar 15, 2024', desc: ' Meet the club, meet the members. New batch orientation starts now!',    img: "images/Jesus.jpeg" },
+  {  title: 'Artsy Day',  date: 'Apr 02, 2024', desc: 'Halloween Edition - A Face Painting Fusion with Callixto our Fashion Club',     img: "images/Jesus.jpeg" },
+  {  title: 'Bridge by Brushes',   date: 'Apr 18, 2024', desc: 'KYRAT 2026  –  The Creative Twist: Double the passion, double the fun ',   img: "images/Jesus.jpeg" },
+  {  title: 'Colourful Whispers',     date: 'May 05, 2024', desc: ' Republic Day Exhibition - Annual showcase of emerging artists',      img: "images/Jesus.jpeg" },
+  {  title: 'CANVASK',    date: 'May 22, 2024', desc: 'A niche quiz exploring the vibrant world of art, from iconic movements to the hidden stories behind visual culture with Qcell',    img: "images/Jesus.jpeg" },
+  {  title: 'Artsy Day',            date: 'Jun 10, 2024', desc: 'Beach Edition   Artsy Day...On the Beach?!  Yes we did ',     img: "images/Jesus.jpeg" },
 ];
 
 const teamMembers = [
@@ -149,9 +149,9 @@ const teamMembers = [
 ];
 
 const newsItems = [
-  { title: 'Spring Exhibition Opens', badge: 'Exhibition',   date: 'March 15, 2024', desc: 'Join us for our most vibrant showcase yet.'        },
-  { title: 'New Artist Residency',    badge: 'Announcement', date: 'March 8, 2024',  desc: 'Applications now open for summer program.'         },
-  { title: 'Digital Art Workshop',    badge: 'Event',        date: 'April 2, 2024',  desc: 'Learn cutting-edge digital techniques.'             }
+  { title: 'Art Magazine', badge: 'Exhibition',   date: 'March 15, 2024', desc: 'Join us for our most vibrant showcase yet.'        },
+  { title: 'Independence day',  badge: 'Announcement', date: 'March 8, 2024',  desc: 'Annual Art Exhibition on 15 aug  2026.'         },
+  { title: 'Buy My Art Section',  badge: 'Event',        date: 'April 2, 2024',  desc: 'Learn cutting-edge digital techniques.'             }
 ];
 
 const contactCards = [
