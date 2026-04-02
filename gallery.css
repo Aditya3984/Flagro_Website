@@ -79,11 +79,17 @@ nav {
   background: rgba(245, 237, 228, 0.93);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  padding: 0 48px;
   height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  /* --- YOUR PIXEL CONTROLS --- */
+  /* Increase this to push the Logo further to the right */
+  padding-left: 96px;  
+
+  /* Increase this to push the Links/Buttons further to the left */
+  padding-right: 148px; 
 }
 
 .nav-logo {
@@ -93,6 +99,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
+  /* Removed padding-right: 200px to let Flexbox handle the spacing naturally */
 }
 
 .nav-dot {
@@ -103,13 +110,19 @@ nav {
   display: grid;
   place-items: center;
 }
-.nav-dot svg { width: 13px; height: 13px; fill: white; }
+
+.nav-dot svg { 
+  width: 13px; 
+  height: 13px; 
+  fill: white; 
+}
 
 .nav-links {
   display: flex;
   gap: 42px;
   list-style: none;
 }
+
 .nav-links a {
   text-decoration: none;
   color: var(--mid);
@@ -117,7 +130,10 @@ nav {
   font-weight: 500;
   transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--dark); }
+
+.nav-links a:hover { 
+  color: var(--dark); 
+}
 
 .nav-right {
   display: flex;
@@ -136,7 +152,10 @@ nav {
   display: grid;
   place-items: center;
 }
-.btn-icon:hover { background: var(--cream-dark); }
+
+.btn-icon:hover { 
+  background: var(--cream-dark); 
+}
 
 .btn-login {
   background: var(--dark);
@@ -150,8 +169,11 @@ nav {
   font-family: 'DM Sans', sans-serif;
   transition: background 0.2s, transform 0.15s;
 }
-.btn-login:hover { background: #333; transform: translateY(-1px); }
 
+.btn-login:hover { 
+  background: #333; 
+  transform: translateY(-1px); 
+}
 
 /* ════════════════════════════════════════
    HERO
