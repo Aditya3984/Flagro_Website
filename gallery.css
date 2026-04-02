@@ -86,10 +86,10 @@ nav {
 
   /* --- YOUR PIXEL CONTROLS --- */
   /* Increase this to push the Logo further to the right */
-  padding-left: 96px;  
+  padding-left: 192px;  
 
   /* Increase this to push the Links/Buttons further to the left */
-  padding-right: 148px; 
+  padding-right: 188px; 
 }
 
 .nav-logo {
