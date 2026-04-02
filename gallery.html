@@ -12,16 +12,17 @@
   <!-- ═══════════════════════════════════
        NAVIGATION
   ════════════════════════════════════ -->
-  <nav style=height:52px; gap="30px">
-    <div class="nav-logo">
-      <img src="images/ArtAddaBrown.png" style="width:100%; height: 30px;">
+   <nav id="navbar" class="sticky top-0 z-50 backdrop-blur-md bg-white/80" style="height:52px; border-bottom: 1px solid rgba(0,0,0,0.08);">
+    <div class="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html">
+        <img src="images/ArtAddaBrown.png" style="width:auto; height: 30px;">
+      </a>
+      <div class="flex items-center gap-8">
+        <a href="index.html" class="nav-link font-body text-bark text-sm font-medium">Home</a>
+        <a href="about.html" class="nav-link font-body text-bark text-sm font-medium">About</a>
+        <a href="buy.html" class="nav-link font-body text-bark text-sm font-medium">Shop</a>
+      </div>
     </div>
-
-    <ul class="nav-links flex items-center gap-8"  >
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="buy.html">Shop</a></li>
-    </ul>
   </nav>
 
   <!-- ═══════════════════════════════════
