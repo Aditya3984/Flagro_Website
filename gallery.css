@@ -72,107 +72,29 @@ body {
 /* ════════════════════════════════════════
    NAVIGATION
 ════════════════════════════════════════ */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(245, 237, 228, 0.93);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  /* --- YOUR PIXEL CONTROLS --- */
-  /* Increase this to push the Logo further to the right */
-  padding-left: 106px;  
-
-  /* Increase this to push the Links/Buttons further to the left */
-  padding-right: 188px; 
-}
-
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* Removed padding-right: 200px to let Flexbox handle the spacing naturally */
-}
-
-.nav-dot {
-  width: 26px;
-  height: 26px;
-  background: var(--orange);
-  border-radius: 6px;
-  display: grid;
-  place-items: center;
-}
-
-.nav-dot svg { 
-  width: 13px; 
-  height: 13px; 
-  fill: white; 
-}
-
-.nav-links {
-  display: flex;
-  gap: 42px;
-  list-style: none;
-}
-
-.nav-links a {
+/* Nav-link hover underline effect (mirrors homepage.css) */
+.nav-link {
+  position: relative;
   text-decoration: none;
-  color: var(--mid);
-  font-size: 0.86rem;
-  font-weight: 500;
-  transition: color 0.2s;
+  color: #4A3728;
+  transition: color 0.3s ease;
 }
-
-.nav-links a:hover { 
-  color: var(--dark); 
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #C8745A;
+  transition: width 0.3s ease;
 }
+.nav-link:hover { color: #C8745A; }
+.nav-link:hover::after { width: 100%; }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--mid);
-  padding: 6px;
-  border-radius: 6px;
-  transition: background 0.2s;
-  display: grid;
-  place-items: center;
-}
-
-.btn-icon:hover { 
-  background: var(--cream-dark); 
-}
-
-.btn-login {
-  background: var(--dark);
-  color: white;
-  border: none;
-  border-radius: 24px;
-  padding: 8px 20px;
-  font-size: 0.83rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.btn-login:hover { 
-  background: #333; 
-  transform: translateY(-1px); 
+@media (max-width: 768px) {
+  .gallery-section { padding: 32px 18px 54px; }
 }
 
 /* ════════════════════════════════════════
