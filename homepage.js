@@ -265,7 +265,7 @@ function renderTeam() {
 
     // Using aspect-ratio instead of a fixed height makes the image container perfectly responsive
     card.innerHTML = `
-      <div class="blob-card" style="aspect-ratio: 4/3; width: 100%; margin-bottom:20px;">
+      <div class="blob-card" style="aspect-ratio: 4/5; width: 100%; margin-bottom:20px;">
             <img src="${m.image}" style="width:100%; height:100%; object-fit:cover; border-radius:16px;" alt="${m.name}" />
       </div>
       <h3 class="font-heading text-bark" style="font-size:18px; font-weight:600; margin-bottom:4px;">${m.name}</h3>
