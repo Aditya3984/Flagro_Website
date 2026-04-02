@@ -127,8 +127,8 @@ document.addEventListener('mousemove', (e) => {
 // DATA
 // =============================================
 const galleryItems = [
-  { cat: 'sunset',    title: 'Jesus',        artist: "John",         image: "images/Jesus.jpeg"    },
-  { cat: 'fine',      title: 'Buddha',       artist: 'Maya Chen',    image: "images/Buddha.jpeg"   },
+  { cat: 'sunset',    title: 'God and Guilt',        artist: "Suman",         image: "images/Jesus.jpeg"    },
+  { cat: 'fine',      title: '',       artist: 'Alisha ISlam',    image: "images/finearts/FA1.jpeg"   },
   { cat: 'photo',     title: 'Spiderman',    artist: 'Leo Park',     image: "images/Spiderman.jpeg"},
   { cat: 'digital',   title: 'Crying',       artist: 'Aria Ross',    image: "images/Crying.jpeg"   },
 ];
