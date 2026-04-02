@@ -135,23 +135,23 @@ const galleryItems = [
 
 const eventItems = [
   {  title: 'INFLUX',   date: 'Mar 15, 2024', desc: ' Meet the club, meet the members. New batch orientation starts now!',    img: "images/Jesus.jpeg" },
-  {  title: 'Artsy Day',  date: 'Apr 02, 2024', desc: 'Halloween Edition - A Face Painting Fusion with Callixto our Fashion Club',     img: "images/Jesus.jpeg" },
-  {  title: 'Bridge by Brushes',   date: 'Apr 18, 2024', desc: 'KYRAT 2026  –  The Creative Twist: Double the passion, double the fun ',   img: "images/Jesus.jpeg" },
-  {  title: 'Colourful Whispers',     date: 'May 05, 2024', desc: ' Republic Day Exhibition - Annual showcase of emerging artists',      img: "images/Jesus.jpeg" },
-  {  title: 'CANVASK',    date: 'May 22, 2024', desc: 'A niche quiz exploring the vibrant world of art, from iconic movements to the hidden stories behind visual culture with Qcell',    img: "images/Jesus.jpeg" },
-  {  title: 'Artsy Day',            date: 'Jun 10, 2024', desc: 'Beach Edition   Artsy Day...On the Beach?!  Yes we did ',     img: "images/Jesus.jpeg" },
+  {  title: 'Artsy Day',  date: '2nd Nov, 2025', desc: 'Halloween Edition - A Face Painting Fusion with Callixto our Fashion Club',     img: "images/Jesus.jpeg" },
+  {  title: 'Bridge by Brushes',   date: ' 1st Feb, 2026 ', desc: 'KYRAT 2026  –  The Creative Twist: Double the passion, double the fun ',   img: "images/Jesus.jpeg" },
+  {  title: 'Colourful Whispers',     date: '26 Jan, 2026', desc: ' Republic Day Exhibition - Annual showcase of emerging artists',      img: "images/Jesus.jpeg" },
+  {  title: 'CANVASK',    date: '16th Mar, 2026', desc: 'A niche quiz exploring the vibrant world of art, from iconic movements to the hidden stories behind visual culture with Qcell',    img: "images/Jesus.jpeg" },
+  {  title: 'Artsy Day',    date: ' 22nd Mar, 2026', desc: 'Beach Edition   Artsy Day...On the Beach?!  Yes we did ',     img: "images/Jesus.jpeg" },
 ];
 
 const teamMembers = [
   { name: 'Dr. Senthil Raani KS',    role: 'Club Faculty Advisor',    image: "images/Jesus.jpeg"},
-  { name: 'Shrirang Khirade',   role: 'Club Coordinator', image: "images/Shri Bhaiya.png"},
-  { name: 'Saksham Srivastava',  role: 'Club Coordinator',     image: "images/Jesus.jpeg"},
+  { name: 'Shrirang Khirade',   role: 'Club Coordinator', image: "images/Shrirang.jpg"},
+  { name: 'Saksham Srivastava',  role: 'Club Coordinator',     image: "images/Saksham.jpg"},
 ];
 
 const newsItems = [
-  { title: 'Art Magazine', badge: 'Exhibition',   date: 'March 15, 2024', desc: 'Join us for our most vibrant showcase yet.'        },
-  { title: 'Independence day',  badge: 'Announcement', date: 'March 8, 2024',  desc: 'Annual Art Exhibition on 15 aug  2026.'         },
-  { title: 'Buy My Art Section',  badge: 'Event',        date: 'April 2, 2024',  desc: 'Learn cutting-edge digital techniques.'             }
+  { title: 'Art Magazine', badge: 'Announcement',   date: 'October, 2026', desc: 'The Art Magazine drops this October—get ready to see creativity come alive.'        },
+  { title: 'Independence day',  badge: 'Event', date: 'August 15, 2026',  desc: 'Celebrate freedom through creativity at the Annual Art Exhibition this Independence Day.'         },
+  { title: 'Buy My Art Section',  badge: 'Announcement',        date: 'October 2, 2026',  desc: 'The Buy My Art section goes live on 2nd October 2026—own a piece of creativity.'          }
 ];
 
 const contactCards = [
