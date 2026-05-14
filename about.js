@@ -188,7 +188,7 @@ function designDivisionImages(containerId, startIndex) {
     { title: 'Graphic Design',  image: "images/graphicDesigns/GA1.jpeg" },
     { title: 'Graphic Design',  image: "images/graphicDesigns/GA2.jpeg" },
     { title: 'Graphic Design',  image: "images/graphicDesigns/GA3.jpeg" },
-    ]
+    ];
   let currentSlide = startIndex || 0;
 
   function renderSlide() {
