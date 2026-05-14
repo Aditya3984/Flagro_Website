@@ -146,10 +146,10 @@ function createShowcaseFrame(containerId, startIndex) {
   container.innerHTML = '';
   const slides = [
     { image: 'images/finearts/FA1.jpeg', title: 'Graphic Design' },
-    { image: 'images/finearts/FA10', title: 'Digital Art' },
-    { image: 'images/finearts/FA19', title: 'Branding'},
-    { image: 'images/finearts/FA22', title: 'UI Design'},
-    { image: 'images/finearts/FA18', title: 'Posters'},
+    { image: 'images/finearts/FA10.jpeg', title: 'Digital Art' },
+    { image: 'images/finearts/FA19.jpeg', title: 'Branding'},
+    { image: 'images/finearts/FA22.jpeg', title: 'UI Design'},
+    { image: 'images/finearts/FA18.jpeg', title: 'Posters'},
   ];
 
   let currentSlide = startIndex || 0;
