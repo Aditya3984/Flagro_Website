@@ -145,18 +145,20 @@ function createShowcaseFrame(containerId, startIndex) {
 
   container.innerHTML = '';
   const slides = [
-    { color: 'linear-gradient(135deg, #C8745A 0%, #D6A190 100%)', title: 'Graphic Design', icon: 'palette' },
-    { color: 'linear-gradient(135deg, #8FA47C 0%, #6B8A5E 100%)', title: 'Digital Art', icon: 'pen-tool' },
-    { color: 'linear-gradient(135deg, #D6A190 0%, #A85D46 100%)', title: 'Branding', icon: 'briefcase' },
-    { color: 'linear-gradient(135deg, #2B1F1B 0%, #4A3530 100%)', title: 'UI Design', icon: 'layout' },
-    { color: 'linear-gradient(135deg, #A85D46 0%, #8FA47C 100%)', title: 'Posters', icon: 'image' },
+    { image: 'images/finearts/FA1.jpeg', title: 'Graphic Design' },
+    { image: 'images/finearts/FA10', title: 'Digital Art' },
+    { image: 'images/finearts/FA19', title: 'Branding'},
+    { image: 'images/finearts/FA22', title: 'UI Design'},
+    { image: 'images/finearts/FA18', title: 'Posters'},
   ];
 
   let currentSlide = startIndex || 0;
 
   function renderSlide() {
     const slide = slides[currentSlide];
-    container.style.background = slide.color;
+    container.style.backgroundImage= "url('" + slide.image + "')";
+    container.style.backgroundSize = "cover";
+    container.style.backgroundPosition = "center";
     container.innerHTML = `
       <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 20px; flex-direction: column;">
         <i data-lucide="${slide.icon}" style="width:48px;height:48px; color: white; opacity: 0.7; margin-bottom: 12px;"></i>
