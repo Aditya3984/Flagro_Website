@@ -148,7 +148,7 @@ function fineArtsImages(containerId, startIndex) {
   container.innerHTML = '';
   const slides = [
     { title: 'Watercolor Study',   image: "images/finearts/FA1.jpeg" },
-    { title: 'Charcoal Sketch',    image: "images/finearts/FA15.jpeg" },
+    { title: 'Charcoal Sketch',    image: "images/finearts/FA18.jpeg" },
     { title: 'Oil Painting',       image: "images/finearts/FA19.jpeg" },
     { title: 'Figure Drawing',     image: "images/finearts/FA22.jpeg" },
     { title: 'Portrait Study',     image: "images/finearts/FA29.jpeg" },
@@ -221,7 +221,6 @@ function comicImages(containerId, startIndex) {
     { title: 'Holika Dahan-2',  image: "images/pictopia/Tape a Tale/Holika_Dahan_page2-1.png" },
     { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 1.png" },
     { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 2.png" },
-    { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI-Episode 2 (Part 1).png" }, 
   ];
 
   let currentSlide = startIndex || 0;
