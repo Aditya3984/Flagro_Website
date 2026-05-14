@@ -112,9 +112,9 @@ sections.forEach(s => observer.observe(s));
 lucide.createIcons();
 renderEventGalleryPreview();
 renderInstagramGrid();
-createShowcaseFrame('fineShowcaseFrame',1); //Function call For Fine Arts 
-createShowcaseFrame('designShowcaseFrame', 0);
-createShowcaseFrame('comicShowcaseFrame', 2);
+fineArtsImages('fineShowcaseFrame', 0);
+designDivisionImages('designShowcaseFrame', 0);
+comicImages('comicShowcaseFrame', 0);
 
 const defaultConfig = {
   hero_title: 'About Flagro Art Club',
@@ -139,150 +139,108 @@ const defaultConfig = {
   primary_action_color: '#C8745A',
 };
 
-function createShowcaseFrame(containerId, startIndex) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
 
-  container.innerHTML = '';
-  const slides = [
-    { image: 'images/finearts/FA1.jpeg', title: 'Graphic Design' },
-    { image: 'images/finearts/FA10.jpeg', title: 'Digital Art' },
-    { image: 'images/finearts/FA19.jpeg', title: 'Branding'},
-    { image: 'images/finearts/FA22.jpeg', title: 'UI Design'},
-    { image: 'images/finearts/FA18.jpeg', title: 'Posters'},
-  ];
-
-  let currentSlide = startIndex || 0;
-
-  function renderSlide() {
-    const slide = slides[currentSlide];
-    container.style.backgroundImage= "url('" + slide.image + "')";
-    container.style.backgroundSize = "cover";
-    container.style.backgroundPosition = "center";
-    container.innerHTML = `
-      <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 20px; flex-direction: column;">
-        <i data-lucide="${slide.icon}" style="width:48px;height:48px; color: white; opacity: 0.7; margin-bottom: 12px;"></i>
-        <p style="font-size: 16px; color: white; opacity: 0.9; font-weight: 600;">${slide.title}</p>
-      </div>
-    `;
-    lucide.createIcons();
-  }
-
-  renderSlide();
-
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    renderSlide();
-  }, 3000);
-}
-
-
-//Fine Arts Section
+// Fine Arts Section
 function fineArtsImages(containerId, startIndex) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
   container.innerHTML = '';
   const slides = [
-    { title: 'Graphic Design', icon: 'palette',       image:"" },
-    { title: 'Digital Art', icon: 'pen-tool',         image:"" },
-    { title: 'Branding', icon: 'briefcase',           image:"" },
-    { title: 'UI Design', icon: 'layout',             image:"" },
-    { title: 'Posters', icon: 'image',                image:"" },
+    { title: 'Watercolor Study',   image: "images/finearts/FA1.jpeg" },
+    { title: 'Charcoal Sketch',    image: "images/fineart/FA15.jpeg" },
+    { title: 'Oil Painting',       image: "images/finearts/FA19.jpeg" },
+    { title: 'Figure Drawing',     image: "images/finearts/FA22.jpeg" },
+    { title: 'Portrait Study',     image: "images/finearts/FA29.jpeg" },
+    { title: 'Oil Painting',       image: "images/finearts/FA10.jpeg" },
+    { title: 'Figure Drawing',     image: "images/finearts/FA33.jpeg" },
+    { title: 'Portrait Study',     image: "images/finearts/FA40.jpeg" },
   ];
 
   let currentSlide = startIndex || 0;
 
   function renderSlide() {
     const slide = slides[currentSlide];
-    container.style.background = slide.color;
+    container.style.backgroundImage = `url('${slide.image}')`;
+    container.style.backgroundSize = "cover";
+    container.style.backgroundPosition = "center";
     container.innerHTML = `
-      <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 20px; flex-direction: column;">
-        <i data-lucide="${slide.icon}" style="width:48px;height:48px; color: white; opacity: 0.7; margin-bottom: 12px;"></i>
-        <p style="font-size: 16px; color: white; opacity: 0.9; font-weight: 600;">${slide.title}</p>
+      <div style="width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;border-radius:20px;padding-bottom:16px;background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);">
+        <p style="font-size:16px;color:white;font-weight:600;">${slide.title}</p>
       </div>
     `;
-    lucide.createIcons();
   }
 
   renderSlide();
-
   setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     renderSlide();
   }, 3000);
 }
 
-
-
-//Design Division
+// Design Division
 function designDivisionImages(containerId, startIndex) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
   container.innerHTML = '';
   const slides = [
-    { title: 'Graphic Design', icon: 'palette',       image:"" },
-    { title: 'Digital Art', icon: 'pen-tool',         image:"" },
-    { title: 'Branding', icon: 'briefcase',           image:"" },
-    { title: 'UI Design', icon: 'layout',             image:"" },
-    { title: 'Posters', icon: 'image',                image:"" },
-  ];
+    { title: 'Graphic Design',  image: "images/graphicDesigns/GA1.jpeg" },
+    { title: 'Graphic Design',  image: "images/graphicDesigns/GA2.jpeg" },
+    { title: 'Graphic Design',  image: "images/graphicDesigns/GA3.jpeg" },
 
   let currentSlide = startIndex || 0;
 
   function renderSlide() {
     const slide = slides[currentSlide];
-    container.style.background = slide.color;
+    container.style.backgroundImage = `url('${slide.image}')`;
+    container.style.backgroundSize = "cover";
+    container.style.backgroundPosition = "center";
     container.innerHTML = `
-      <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 20px; flex-direction: column;">
-        <i data-lucide="${slide.icon}" style="width:48px;height:48px; color: white; opacity: 0.7; margin-bottom: 12px;"></i>
-        <p style="font-size: 16px; color: white; opacity: 0.9; font-weight: 600;">${slide.title}</p>
+      <div style="width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;border-radius:20px;padding-bottom:16px;background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);">
+        <p style="font-size:16px;color:white;font-weight:600;">${slide.title}</p>
       </div>
     `;
-    lucide.createIcons();
   }
 
   renderSlide();
-
   setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     renderSlide();
   }, 3000);
 }
 
-
-
-//Comic Section
+// Comic Section
 function comicImages(containerId, startIndex) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
   container.innerHTML = '';
   const slides = [
-    { title: 'Graphic Design', icon: 'palette',       image:"" },
-    { title: 'Digital Art', icon: 'pen-tool',         image:"" },
-    { title: 'Branding', icon: 'briefcase',           image:"" },
-    { title: 'UI Design', icon: 'layout',             image:"" },
-    { title: 'Posters', icon: 'image',                image:"" },
+    { title: 'Holika Dahan-1',  image: "images/pictopia/Tape a Tale/Holika_Dahan_page1-1.png" },
+    { title: 'Holika Dahan-2',       image: "images/pictopia/Tape a Tale/Holika_Dahan_page2-1.png" },
+    { title: 'Archi',      image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 1.png" },
+    { title: 'Archi',     image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 2.png" },
+    { title: 'Archi',  image: "images/pictopia/Original Stories/ARCHI-Episode-2 (Part 1).png" },
+    
+    
   ];
 
   let currentSlide = startIndex || 0;
 
   function renderSlide() {
     const slide = slides[currentSlide];
-    container.style.background = slide.color;
+    container.style.backgroundImage = `url('${slide.image}')`;
+    container.style.backgroundSize = "cover";
+    container.style.backgroundPosition = "center";
     container.innerHTML = `
-      <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 20px; flex-direction: column;">
-        <i data-lucide="${slide.icon}" style="width:48px;height:48px; color: white; opacity: 0.7; margin-bottom: 12px;"></i>
-        <p style="font-size: 16px; color: white; opacity: 0.9; font-weight: 600;">${slide.title}</p>
+      <div style="width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;border-radius:20px;padding-bottom:16px;background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);">
+        <p style="font-size:16px;color:white;font-weight:600;">${slide.title}</p>
       </div>
     `;
-    lucide.createIcons();
   }
 
   renderSlide();
-
   setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     renderSlide();
