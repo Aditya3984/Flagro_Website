@@ -219,8 +219,8 @@ function comicImages(containerId, startIndex) {
   const slides = [
     { title: 'Holika Dahan-1',  image: "images/pictopia/Tape a Tale/Holika_Dahan_page1-1.png" },
     { title: 'Holika Dahan-2',  image: "images/pictopia/Tape a Tale/Holika_Dahan_page2-1.png" },
-    { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 1.png" },
-    { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI(Episode-1)Part 2.png" },
+    { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI (Episode-1) Part 1.png" },
+    { title: 'Archi',           image: "images/pictopia/Original Stories/ARCHI (Episode-1) Part 2.png" },
   ];
 
   let currentSlide = startIndex || 0;
