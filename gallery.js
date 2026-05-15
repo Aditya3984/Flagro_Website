@@ -271,10 +271,9 @@ function closeAdminDirect() {
 function catLabel(val) {
   const labels = {
     'fine-art':      'Fine Art',
-    'photography':   'Photography',
     'digital-art':   'Digital Art',
     'graphic-design':'Graphic Design',
-    'sculpture':     'Sculpture'
+    'comic':         'Comic'
   };
   return labels[val] || val;
 }
