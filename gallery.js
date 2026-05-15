@@ -273,7 +273,7 @@ function catLabel(val) {
     'fine-art':      'Fine Art',
     'digital-art':   'Digital Art',
     'graphic-design':'Graphic Design',
-    'comic':         'Comic'
+    'comic':         'Comic',
   };
   return labels[val] || val;
 }
